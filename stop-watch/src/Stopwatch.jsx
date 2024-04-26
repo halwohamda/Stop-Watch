@@ -24,6 +24,9 @@ function formatTime(){
     <div className='stopwatch'>
         <div className='display'>
             {formatTime()}
+            <div className="contorols">
+                <button className=''>start</button>
+            </div>
 
         </div>
 
