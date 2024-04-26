@@ -6,7 +6,19 @@ const Stopwatch = () => {
     const intervalIdRef = useRef(null);
     const starRimeRef = useRef(0);
 
+useEffect(()=>{
+
+}, isRunning);
+
+function start(){
+
+}
+function reset(){
+
+}
+fuction formatTime(){
     
+}
   return (
     <div>Stopwatch</div>
   )
