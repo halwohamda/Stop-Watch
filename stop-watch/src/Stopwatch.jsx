@@ -25,7 +25,7 @@ function formatTime(){
         <div className='display'>
             {formatTime()}
             <div className="contorols">
-                <button className=''>start</button>
+                <button onClick={start} className='start-button'>start</button>
             </div>
 
         </div>
