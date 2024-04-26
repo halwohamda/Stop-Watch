@@ -16,11 +16,19 @@ function start(){
 function reset(){
 
 }
-fuction formatTime(){
-    
+function formatTime(){
+    return `00:00:00`
+
 }
   return (
-    <div>Stopwatch</div>
+    <div className='stopwatch'>
+        <div className='display'>
+            {formatTime()}
+
+        </div>
+
+
+    </div>
   )
 }
 
