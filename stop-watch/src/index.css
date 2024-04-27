@@ -42,5 +42,8 @@ body{
 
 }
 .start-button{
-    background-color: green;
+    background-color: rgb(3, 97, 3);
+}
+.start-button:hover{
+    background-color: hsl(115, 100%, 40%);
 }
