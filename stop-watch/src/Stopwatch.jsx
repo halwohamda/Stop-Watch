@@ -30,8 +30,15 @@ function reset(){
  setElapsedTime(0);
  setIsRunning(false);
 }
+
 function formatTime(){
-    return `00:00:00`
+
+  let hours = Math.floor(elapsedTime/(1000 * 60 * 60));
+  let munites = Math.floor(elapsedTime/(1000 * 60 )%60);
+  let seconds = Math.floor(elapsedTime/(1000)%60);
+  let  milliseconds= Math.floor((elapsedTime % 1000) / 10);
+
+    return `${hours}:${munites}:${seconds}:${milliseconds}`;
 
 }
   return (
