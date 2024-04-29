@@ -1,17 +1,19 @@
 import React, {useState,useEffect,useRef} from 'react'
 
-const Stopwatch = () => {
+function Stopwatch (){
     const [isRunning, setRunning] = useState(false);
     const [elapsedTime, setElapsedTime] = useState(0);
     const intervalIdRef = useRef(null);
-    const starRimeRef = useRef(0);
+    const startTimeRef = useRef(0);
 
 useEffect(()=>{
 
-}, isRunning);
+}, [isRunning]);
 
 function start(){
-
+    setRunning(true);
+    startTimeRef.current = Date.now() - elapsedTime;
+    console.log(startTimeRef.current)
 }
 function reset(){
 
@@ -24,7 +26,7 @@ function formatTime(){
     <div className='stopwatch'>
         <div className='display'>
             {formatTime()}
-            <div className="contorols">
+            <div className="controls">
                 <button onClick={start} className='start-button'>start</button>
                 <button onClick={stop} className='stop-button'>stop</button>
                 <button onClick={reset} className='reset-button'>rest</button>
